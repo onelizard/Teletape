@@ -24,7 +24,7 @@ With more and more channels, it's harder and harder to keep track of them all. Y
 
 ## Bot commands:
 
-- **/mytape** - Sets the channel as a news feed.
+- **/mytape** - Sets the channel as a news feed
 - **/ignore** - When mentioning the post, ignores the source.
 
 ## Why doesn't the script work?
