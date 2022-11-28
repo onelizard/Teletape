@@ -3,8 +3,8 @@ const { StringSession } = require("telegram/sessions");
 const input = require("input"); // npm i input
 const fs = require("fs");
 
-const apiId = 1025907;
-const apiHash = "452b0359b988148995f22ff0f4229750";
+const apiId = 20825636;
+const apiHash = "343c510f28a3fd586cc5feda3a05dd7e";
 const stringSession = new StringSession(""); // fill this later with the value from session.save()
 
 const saveSession = (session) => {
