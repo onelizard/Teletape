@@ -1,5 +1,5 @@
-#Teletape - Telegram news feed
-######This library is designed to add a news feed to your Telegram.
+# Teletape - Telegram news feed
+###### This library is designed to add a news feed to your Telegram.
 
 To work you need to:
 
