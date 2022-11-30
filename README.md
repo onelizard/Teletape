@@ -1,5 +1,6 @@
 <header>
 <div align="center">
+<img src="docs/assets/logo.png" alt="logo" height="100" align="center">
 <h1 align="center">Teletape - Telegram news feed</h1>
 <p>This script is designed to add a news feed to your Telegram.</p>
 </div>
