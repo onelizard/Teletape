@@ -1,6 +1,6 @@
 <header>
 <div align="center">
-<img src="docs/assets/logo.png" alt="logo" height="300" align="center">
+<img src="docs/assets/logo.png" alt="logo" height="60" align="center">
 <h1 align="center">Teletape</h1>
 <p>This script is designed to add a news feed to your Telegram.</p>
 </div>
@@ -10,7 +10,7 @@
 
 With more and more channels, it's harder and harder to keep track of them all. You have to go to each channel and read it separately. I had the idea to make a newsfeed that would make this experience easier. Reading posts on Telegram has become even more convenient!
 
-<img src="docs/assets/demonstration.jpg?raw=true" alt="demonstration" height="300">
+<img src="docs/assets/demonstration.jpg?raw=true" alt="demonstration" height="150">
 
 ## What's in it for you?
 
@@ -23,17 +23,20 @@ With more and more channels, it's harder and harder to keep track of them all. Y
 ## Installing
 
 1. Install packages:
+
 ```bash
 $ npm i
 ```
 
 2. Run authorization script:
+
 ```bash
 $ node login.js
 ```
 
 3. Pass the authorization
 4. Run the working script:
+
 ```bash
 $ node app.js
 ```
