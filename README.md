@@ -10,6 +10,8 @@
 
 With more and more channels, it's harder and harder to keep track of them all. You have to go to each channel and read it separately. I had the idea to make a newsfeed that would make this experience easier. Reading posts on Telegram has become even more convenient!
 
+<img src="docs/assets/demonstration.jpg?raw=true" alt="demonstration" height="300">
+
 ## What's in it for you?
 
 - Share your newsfeed with your friends!
@@ -17,8 +19,6 @@ With more and more channels, it's harder and harder to keep track of them all. Y
 - Read the news as it comes in, not separately in each channel!
 - Fast forward to the source of the news!
 - Hide what you don't like!
-
-![demonstration](docs/assets/demonstration.jpg?raw=true "demonstration")
 
 ## Installing
 
