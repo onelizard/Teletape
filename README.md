@@ -17,20 +17,17 @@ With more and more channels, it's harder and harder to keep track of them all. Y
 ## Installing
 
 1. Install packages:
-
 ```bash
 $ npm i
 ```
 
 2. Run authorization script:
-
 ```bash
 $ node login.js
 ```
 
 3. Pass the authorization
 4. Run the working script:
-
 ```bash
 $ node app.js
 ```
