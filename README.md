@@ -1,7 +1,7 @@
 <header>
 <div align="center">
-<img src="docs/assets/logo.png" alt="logo" height="100" align="center">
-<h1 align="center">Teletape - Telegram news feed</h1>
+<img src="docs/assets/logo.png" alt="logo" height="300" align="center">
+<h1 align="center">Teletape</h1>
 <p>This script is designed to add a news feed to your Telegram.</p>
 </div>
 </header>
@@ -17,6 +17,8 @@ With more and more channels, it's harder and harder to keep track of them all. Y
 - Read the news as it comes in, not separately in each channel!
 - Fast forward to the source of the news!
 - Hide what you don't like!
+
+![demonstration](docs/assets/demonstration.jpg?raw=true "demonstration")
 
 ## Installing
 
