@@ -1,6 +1,9 @@
-# Teletape - Telegram news feed
-
-This script is designed to add a news feed to your Telegram.
+<header>
+<div align="center">
+<h1 align="center">Teletape - Telegram news feed</h1>
+<p>This script is designed to add a news feed to your Telegram.</p>
+</div>
+</header>
 
 ## My idea
 
