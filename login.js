@@ -22,6 +22,7 @@ const saveSession = (session) => {
       await input.text("Please enter the code you received: "),
     onError: (err) => console.log(err),
   });
+
   console.log("You should now be connected.");
 
   // Saving the session

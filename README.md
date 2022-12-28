@@ -1,4 +1,3 @@
-
 <header>
 <div align="center">
 <h1 align="center">Teletape</h1>
@@ -47,6 +46,7 @@ $ node app.js
 
 - **/mytape** - Sets the channel as a news feed.
 - **/ignore** - When mentioning the post, ignores the source.
+- **/hide** - Hide Content Authors.
 
 ## Why doesn't the script work?
 

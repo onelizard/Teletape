@@ -11,6 +11,9 @@ if (!fs.existsSync("./my.session")) {
 // Чат в который надо пересылать
 let tape_id = null;
 
+// Скрывать ли автора
+let dropAuthor = false;
+
 // Получаем сессию из файла
 const session = fs.readFileSync("./my.session", "utf8");
 
@@ -57,6 +60,7 @@ const newUpdate = async (update) => {
   if (message.message == "/mytape") return setTape(peer_id);
   if (message.message == "/ignore" && tape_id)
     return ignore(message.replyTo, message.peerId);
+  if (message.message == "/hide" && tape_id) return hideAuthor(message.peerId);
   if (!message.peerId) return error(update);
   if (!peer_id || !message_id || !tape_id) return error(update);
   if (message.fromId) return error(update);
@@ -69,12 +73,34 @@ const newUpdate = async (update) => {
   await sendMessages(message.peerId, message_id, tape_id, groupedId);
 };
 
+// Скрыть автора при пересылке
+const hideAuthor = async (peer_id) => {
+  try {
+    dropAuthor = true;
+    const randomId = rand(1000000, 1000000000);
+
+    await client.invoke(
+      new Api.messages.SendMessage({
+        peer: peer_id,
+        message: `Content authors will be hidden!`,
+        randomId: randomId,
+      })
+    );
+
+    console.log("Peer_id:", peer_id);
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+// Игнорирование канала из которого пришло сообщение
 const ignore = async (reply_msg, peer_id) => {
   if (!reply_msg) return;
   const msg_id = reply_msg.replyToMsgId;
   await getMsg(msg_id, peer_id);
 };
 
+// Получаем сообщение по его ID
 const getMsg = async (msg_id, channel) => {
   const result = await client.invoke(
     new Api.channels.GetMessages({
@@ -102,6 +128,7 @@ const getMsg = async (msg_id, channel) => {
   );
 };
 
+//Добавить канал в игнор
 const setBlacklist = (peer_id) => {
   const blackfile = fs.readFileSync("./blacklist.json", "utf8");
   const blacklist = JSON.parse(blackfile);
@@ -177,6 +204,7 @@ const sendMessage = async (peerId, message_ids, tape_id) => {
         id: message_ids,
         randomId: randomIds,
         toPeer: tape_id,
+        dropAuthor,
       })
     );
   } catch (error) {
